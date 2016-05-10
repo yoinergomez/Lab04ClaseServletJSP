@@ -12,7 +12,9 @@
  </listener>
  <servlet>
   <servlet-name>Rest</servlet-name>
-  <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+  <!-- <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class> -->
+  <!-- Para realizar la integracion de jersey con Spring siguiente linea -->
+  <servlet-class>com.sun.jersey.spi.spring.container.servlet.SpringServlet</servlet-class>
   <init-param>
    <param-name>com.sun.jersey.config.property.packages</param-name>
    <param-value>co.edu.udea.iw.ws</param-value>
